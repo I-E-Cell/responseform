@@ -33,7 +33,7 @@ function submitForm(e) {
   var domain = getElementVal("domain");
   var suggestion = getElementVal("suggestion");
 
-  saveMessages(userName , whatsapp , company , domain , suggestion);
+  saveMessages(userName , whatsapp , email ,  company , domain , suggestion);
 
   //   enable alert
   document.querySelector(".alert").style.display = "block";
