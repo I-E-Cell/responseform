@@ -28,12 +28,12 @@ function submitForm(e) {
 
   var userName = getElementVal("userName");
   var whatsapp = getElementVal("whatsapp");
-    var email =getElementVal("email");
   var company = getElementVal("company");
   var domain = getElementVal("domain");
   var suggestion = getElementVal("suggestion");
+  var email = getElementVal("email");
 
-  saveMessages(userName , whatsapp , email ,  company , domain , suggestion);
+  saveMessages(userName , whatsapp ,  company , domain , suggestion , email );
 
   //   enable alert
   document.querySelector(".alert").style.display = "block";
@@ -49,16 +49,16 @@ function submitForm(e) {
 
 
 
-const saveMessages = (userName , whatsapp , email, company , domain , suggestion) => {
+const saveMessages = (userName , whatsapp , company , domain , suggestion , email) => {
   var newContactform = contactformDB.push();
 
   newContactform.set({
    userName : userName,
    whatsapp : whatsapp,
-    email:  email,
    company : company,
    domain : domain ,
-   suggestion : suggestion , 
+   suggestion : suggestion ,
+      email : email ,
   });
 };
 
