@@ -28,6 +28,7 @@ function submitForm(e) {
 
   var userName = getElementVal("userName");
   var whatsapp = getElementVal("whatsapp");
+    var email =getElementVal("email");
   var company = getElementVal("company");
   var domain = getElementVal("domain");
   var suggestion = getElementVal("suggestion");
@@ -54,6 +55,7 @@ const saveMessages = (userName , whatsapp , company , domain , suggestion) => {
   newContactform.set({
    userName : userName,
    whatsapp : whatsapp,
+      email:  email,
    company : company,
    domain : domain ,
    suggestion : suggestion , 
