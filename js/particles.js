@@ -49,13 +49,13 @@ function submitForm(e) {
 
 
 
-const saveMessages = (userName , whatsapp , company , domain , suggestion) => {
+const saveMessages = (userName , whatsapp , email, company , domain , suggestion) => {
   var newContactform = contactformDB.push();
 
   newContactform.set({
    userName : userName,
    whatsapp : whatsapp,
-      email:  email,
+    email:  email,
    company : company,
    domain : domain ,
    suggestion : suggestion , 
